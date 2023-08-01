@@ -10,6 +10,9 @@ const Navbar = () => {
       <button className='blog'>New Blog</button>
       </div>
     </div>
+    <div className='line'>
+        <hr/>
+    </div>
     </>
     
   )
