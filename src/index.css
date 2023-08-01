@@ -38,12 +38,13 @@ code {
 .home{
   padding: 7px;
   border: none;
-  border-radius: 7px;
 }
 .home:hover{
   cursor: pointer;
   background-color: rgb(202, 32, 88);
   color: white;
+  border-radius: 7px;
+
 }
 .content{
   text-align: left;
