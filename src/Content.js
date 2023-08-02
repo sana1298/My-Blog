@@ -1,14 +1,26 @@
 import React from 'react'
 
 const ContentPage = () => {
+  const data=[{
+    title:'Blog Post 1' ,
+    author: 'Sana'
+   },
+   {title:'Blog Post 2' ,
+   author: 'Romeo'
+  }]
   return (
     <div className='content'>
-      <h1 className='party'>Opening party!</h1>
-      <p>Written by yashi</p>
-      <h1 className='welcome'>Welcome to the New Blog</h1>
-      <p>Written by mario</p>
+      {data.map(item =>{
+        return(
+      <div className='data'>
+        <h1 className='party'>{item.title}</h1>
+        <p className='welcome'>{item.author}</p>
+        </div>
+        )
+      })}
+     
     </div>
   )
-}
+    }
 
 export default ContentPage

@@ -2,12 +2,14 @@
 import './App.css';
 import Navbar from'./Navbar';
 import ContentPage from './Content';
+import FetchAPI from './Fetch'
 
 function App() {
   return (
     <div className="App">
         <Navbar/>
         <ContentPage/>
+        <FetchAPI/>
     </div>
   );
 }
