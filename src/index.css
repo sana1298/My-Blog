@@ -44,7 +44,6 @@ code {
   background-color: rgb(202, 32, 88);
   color: white;
   border-radius: 7px;
-
 }
 .content{
   text-align: left;
@@ -52,4 +51,10 @@ code {
 }
 .party,.welcome,.head{
   color: rgb(202, 32, 88);
+}
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
 }

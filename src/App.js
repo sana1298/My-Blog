@@ -1,15 +1,27 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from'./Navbar';
-import ContentPage from './Content';
-import FetchAPI from './Fetch'
+import ContentPage from './Content1';
+// import FetchAPI from './Fetch'
 
 function App() {
+  const data2=[{
+      title:'Blog Post 1' ,
+      author: 'Sana'
+     },
+     {title:'Blog Post 2' ,
+     author: 'Romeo'
+    },
+    {title:'Blog Post 3' ,
+    author: 'Alya'
+   }]
+    const age=28;
   return (
     <div className="App">
         <Navbar/>
-        <ContentPage/>
-        <FetchAPI/>
+        <ContentPage data={data2} age={age}/>
+        {/* <FetchAPI/> */}
+        
     </div>
   );
 }
