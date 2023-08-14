@@ -1,8 +1,23 @@
-import React, { useState } from 'react'
+import React from "react"
+import  { useState,useEffect} from 'react'
+
 import BlogList from './BlogList';
 
 const ContentPage = (props) => {
   const {data ,age} = props;
+  const [name,setName]= useState(true)
+
+  // [] -> component's 1st mount 
+  // [data, age, name] -> Updating phase
+  // return () => {} -> Unmount
+
+  useEffect(() => {
+      // console.log("note0")
+      console.log(name)
+       return()=>{
+          console.log("sana")
+       }   
+  }, [name])
   // const data=[{
   //   title:'Blog Post 1' ,
   //   author: 'Sana'
@@ -11,7 +26,7 @@ const ContentPage = (props) => {
   //  author: 'Romeo'
   // }]
   // const name='Sanofer';
-  const [name,setName]= useState("Sanofer")
+  // const [name,setName]= useState("Sanofer")
   // const age=25;
   const handleClick = () => {
     console.log('Button Clicked');
